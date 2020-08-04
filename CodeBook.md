@@ -5,16 +5,6 @@ date: "3/8/2020"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
 The run_analysis.R script performs the data preparation and then followed by the 5 steps required as described in the course project’s definition.
 
 Download the dataset
@@ -62,13 +52,3 @@ All start with character t in column’s name replaced by Time
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 FinalData (180 rows, 88 columns) is created by sumarizing TidyData taking the means of each variable for each activity and each subject, after groupped by subject and activity.
 Export FinalData into FinalData.txt file.
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
